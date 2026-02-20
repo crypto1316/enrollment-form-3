@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Enrollment Form</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #e3f2fd;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 25px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #0d47a1;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: 600;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0 15px 0;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        .gender-group {
+            margin-bottom: 15px;
+        }
+
+        .gender-group input {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        .btn {
+            width: 100%;
+            background-color: #1976d2;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #0d47a1;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>College Enrollment Form</h2>
+
+    <form>
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Roll Number:</label>
+        <input type="text" placeholder="Enter roll number" required>
+
+        <label>Department:</label>
+        <select required>
+            <option value="">Select Department</option>
+            <option>Computer Science</option>
+            <option>Artificial Intelligence</option>
+            <option>Electronics</option>
+            <option>Mechanical</option>
+            <option>Commerce</option>
+        </select>
+
+        <label>Gender:</label>
+        <div class="gender-group">
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+        </div>
+
+        <label>Contact Number:</label>
+        <input type="tel" placeholder="Enter phone number" required>
+
+        <label>Email Address:</label>
+        <input type="email" placeholder="Enter email" required>
+
+        <input type="submit" value="Submit" class="btn">
+    </form>
+</div>
+
+</body>
+</html>
